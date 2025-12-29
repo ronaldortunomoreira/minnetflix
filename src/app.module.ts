@@ -17,7 +17,7 @@ import { AuthModule } from './auth/auth.module';
       host: process.env.POSTGRES_HOST,
       port: parseInt(process.env.POSTGRES_PORT!),
       username: process.env.POSTGRES_USERNAME,
-      password:  process.env.POSTGRES_PASSWORD,
+      password: process.env.POSTGRES_PASSWORD,
       database: process.env.POSTGRES_DATABASE,
       autoLoadEntities: true,
       synchronize: true,
@@ -28,7 +28,7 @@ import { AuthModule } from './auth/auth.module';
         ?{
           rejectUnauthorized:false
         }
-        : null,
+        :null,
       }
     }),
     SeriesModule,
